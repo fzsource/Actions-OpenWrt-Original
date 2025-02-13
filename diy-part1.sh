@@ -130,7 +130,7 @@ EOF
 
 # 编译VMware镜像以及镜像填充	
 cat >> .config <<EOF	
-# CONFIG_VMDK_IMAGES is not set
+CONFIG_VMDK_IMAGES=y
 # CONFIG_TARGET_IMAGES_PAD is not set
 EOF
 
@@ -237,8 +237,8 @@ cat >> .config <<EOF
 # CONFIG_PACKAGE_luci-app-autoreboot=y #定时重启
 CONFIG_PACKAGE_luci-app-upnp=y #通用即插即用UPnP(端口自动转发)
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set #上网时间控制
-# CONFIG_PACKAGE_luci-app-wol is not set #网络唤醒
-# CONFIG_PACKAGE_luci-app-frpc=y #Frp内网穿透
+CONFIG_PACKAGE_luci-app-wol=y #网络唤醒
+CONFIG_PACKAGE_luci-app-frpc=y #Frp内网穿透
 # CONFIG_PACKAGE_luci-app-frps=y
 # CONFIG_PACKAGE_luci-app-udpxy=y
 CONFIG_PACKAGE_luci-app-nlbwmon=y #宽带流量监控
