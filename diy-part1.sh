@@ -130,7 +130,7 @@ EOF
 
 # 编译VMware镜像以及镜像填充	
 cat >> .config <<EOF	
-CONFIG_VMDK_IMAGES=y
+# CONFIG_VMDK_IMAGES=y
 # CONFIG_TARGET_IMAGES_PAD is not set
 EOF
 
